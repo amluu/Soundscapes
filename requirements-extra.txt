@@ -1,0 +1,8 @@
+# Only for the dense and LSA parts (soundscapes/dense.py, soundscapes/lsa.py and
+# their scripts). Everything else is standard library.
+numpy
+scipy
+scikit-learn
+onnxruntime
+tokenizers
+nltk  # plus its averaged_perceptron_tagger_eng data, for --pos
