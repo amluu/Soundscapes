@@ -1,0 +1,2345 @@
+{
+  "book": "The Hobbit",
+  "segments": [
+    {
+      "id": 1001,
+      "char_start": 0,
+      "char_end": 120,
+      "text": "This is fallback text for segment 1.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1002,
+      "char_start": 121,
+      "char_end": 241,
+      "text": "This is fallback text for segment 2.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1003,
+      "char_start": 242,
+      "char_end": 362,
+      "text": "This is fallback text for segment 3.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1004,
+      "char_start": 363,
+      "char_end": 483,
+      "text": "This is fallback text for segment 4.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1005,
+      "char_start": 484,
+      "char_end": 604,
+      "text": "This is fallback text for segment 5.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "995",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1006,
+      "char_start": 605,
+      "char_end": 725,
+      "text": "This is fallback text for segment 6.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1007,
+      "char_start": 726,
+      "char_end": 846,
+      "text": "This is fallback text for segment 7.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1008,
+      "char_start": 847,
+      "char_end": 967,
+      "text": "This is fallback text for segment 8.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1009,
+      "char_start": 968,
+      "char_end": 1088,
+      "text": "This is fallback text for segment 9.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1010,
+      "char_start": 1089,
+      "char_end": 1209,
+      "text": "This is fallback text for segment 10.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9910",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1011,
+      "char_start": 1210,
+      "char_end": 1330,
+      "text": "This is fallback text for segment 11.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1012,
+      "char_start": 1331,
+      "char_end": 1451,
+      "text": "This is fallback text for segment 12.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1013,
+      "char_start": 1452,
+      "char_end": 1572,
+      "text": "This is fallback text for segment 13.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1014,
+      "char_start": 1573,
+      "char_end": 1693,
+      "text": "This is fallback text for segment 14.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1015,
+      "char_start": 1694,
+      "char_end": 1814,
+      "text": "This is fallback text for segment 15.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9915",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1016,
+      "char_start": 1815,
+      "char_end": 1935,
+      "text": "This is fallback text for segment 16.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1017,
+      "char_start": 1936,
+      "char_end": 2056,
+      "text": "This is fallback text for segment 17.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1018,
+      "char_start": 2057,
+      "char_end": 2177,
+      "text": "This is fallback text for segment 18.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1019,
+      "char_start": 2178,
+      "char_end": 2298,
+      "text": "This is fallback text for segment 19.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1020,
+      "char_start": 2299,
+      "char_end": 2419,
+      "text": "This is fallback text for segment 20.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9920",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1021,
+      "char_start": 2420,
+      "char_end": 2540,
+      "text": "This is fallback text for segment 21.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1022,
+      "char_start": 2541,
+      "char_end": 2661,
+      "text": "This is fallback text for segment 22.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1023,
+      "char_start": 2662,
+      "char_end": 2782,
+      "text": "This is fallback text for segment 23.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1024,
+      "char_start": 2783,
+      "char_end": 2903,
+      "text": "This is fallback text for segment 24.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1025,
+      "char_start": 2904,
+      "char_end": 3024,
+      "text": "This is fallback text for segment 25.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9925",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1026,
+      "char_start": 3025,
+      "char_end": 3145,
+      "text": "This is fallback text for segment 26.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1027,
+      "char_start": 3146,
+      "char_end": 3266,
+      "text": "This is fallback text for segment 27.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1028,
+      "char_start": 3267,
+      "char_end": 3387,
+      "text": "This is fallback text for segment 28.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1029,
+      "char_start": 3388,
+      "char_end": 3508,
+      "text": "This is fallback text for segment 29.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1030,
+      "char_start": 3509,
+      "char_end": 3629,
+      "text": "This is fallback text for segment 30.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9930",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1031,
+      "char_start": 3630,
+      "char_end": 3750,
+      "text": "This is fallback text for segment 31.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1032,
+      "char_start": 3751,
+      "char_end": 3871,
+      "text": "This is fallback text for segment 32.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1033,
+      "char_start": 3872,
+      "char_end": 3992,
+      "text": "This is fallback text for segment 33.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1034,
+      "char_start": 3993,
+      "char_end": 4113,
+      "text": "This is fallback text for segment 34.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1035,
+      "char_start": 4114,
+      "char_end": 4234,
+      "text": "This is fallback text for segment 35.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9935",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1036,
+      "char_start": 4235,
+      "char_end": 4355,
+      "text": "This is fallback text for segment 36.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1037,
+      "char_start": 4356,
+      "char_end": 4476,
+      "text": "This is fallback text for segment 37.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1038,
+      "char_start": 4477,
+      "char_end": 4597,
+      "text": "This is fallback text for segment 38.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1039,
+      "char_start": 4598,
+      "char_end": 4718,
+      "text": "This is fallback text for segment 39.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1040,
+      "char_start": 4719,
+      "char_end": 4839,
+      "text": "This is fallback text for segment 40.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9940",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1041,
+      "char_start": 4840,
+      "char_end": 4960,
+      "text": "This is fallback text for segment 41.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1042,
+      "char_start": 4961,
+      "char_end": 5081,
+      "text": "This is fallback text for segment 42.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1043,
+      "char_start": 5082,
+      "char_end": 5202,
+      "text": "This is fallback text for segment 43.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1044,
+      "char_start": 5203,
+      "char_end": 5323,
+      "text": "This is fallback text for segment 44.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1045,
+      "char_start": 5324,
+      "char_end": 5444,
+      "text": "This is fallback text for segment 45.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9945",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1046,
+      "char_start": 5445,
+      "char_end": 5565,
+      "text": "This is fallback text for segment 46.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1047,
+      "char_start": 5566,
+      "char_end": 5686,
+      "text": "This is fallback text for segment 47.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1048,
+      "char_start": 5687,
+      "char_end": 5807,
+      "text": "This is fallback text for segment 48.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1049,
+      "char_start": 5808,
+      "char_end": 5928,
+      "text": "This is fallback text for segment 49.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1050,
+      "char_start": 5929,
+      "char_end": 6049,
+      "text": "This is fallback text for segment 50.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9950",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1051,
+      "char_start": 6050,
+      "char_end": 6170,
+      "text": "This is fallback text for segment 51.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1052,
+      "char_start": 6171,
+      "char_end": 6291,
+      "text": "This is fallback text for segment 52.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1053,
+      "char_start": 6292,
+      "char_end": 6412,
+      "text": "This is fallback text for segment 53.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1054,
+      "char_start": 6413,
+      "char_end": 6533,
+      "text": "This is fallback text for segment 54.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1055,
+      "char_start": 6534,
+      "char_end": 6654,
+      "text": "This is fallback text for segment 55.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9955",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1056,
+      "char_start": 6655,
+      "char_end": 6775,
+      "text": "This is fallback text for segment 56.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1057,
+      "char_start": 6776,
+      "char_end": 6896,
+      "text": "This is fallback text for segment 57.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1058,
+      "char_start": 6897,
+      "char_end": 7017,
+      "text": "This is fallback text for segment 58.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1059,
+      "char_start": 7018,
+      "char_end": 7138,
+      "text": "This is fallback text for segment 59.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1060,
+      "char_start": 7139,
+      "char_end": 7259,
+      "text": "This is fallback text for segment 60.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9960",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1061,
+      "char_start": 7260,
+      "char_end": 7380,
+      "text": "This is fallback text for segment 61.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1062,
+      "char_start": 7381,
+      "char_end": 7501,
+      "text": "This is fallback text for segment 62.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1063,
+      "char_start": 7502,
+      "char_end": 7622,
+      "text": "This is fallback text for segment 63.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1064,
+      "char_start": 7623,
+      "char_end": 7743,
+      "text": "This is fallback text for segment 64.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1065,
+      "char_start": 7744,
+      "char_end": 7864,
+      "text": "This is fallback text for segment 65.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9965",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1066,
+      "char_start": 7865,
+      "char_end": 7985,
+      "text": "This is fallback text for segment 66.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1067,
+      "char_start": 7986,
+      "char_end": 8106,
+      "text": "This is fallback text for segment 67.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1068,
+      "char_start": 8107,
+      "char_end": 8227,
+      "text": "This is fallback text for segment 68.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1069,
+      "char_start": 8228,
+      "char_end": 8348,
+      "text": "This is fallback text for segment 69.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1070,
+      "char_start": 8349,
+      "char_end": 8469,
+      "text": "This is fallback text for segment 70.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9970",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1071,
+      "char_start": 8470,
+      "char_end": 8590,
+      "text": "This is fallback text for segment 71.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1072,
+      "char_start": 8591,
+      "char_end": 8711,
+      "text": "This is fallback text for segment 72.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1073,
+      "char_start": 8712,
+      "char_end": 8832,
+      "text": "This is fallback text for segment 73.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1074,
+      "char_start": 8833,
+      "char_end": 8953,
+      "text": "This is fallback text for segment 74.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1075,
+      "char_start": 8954,
+      "char_end": 9074,
+      "text": "This is fallback text for segment 75.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9975",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1076,
+      "char_start": 9075,
+      "char_end": 9195,
+      "text": "This is fallback text for segment 76.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1077,
+      "char_start": 9196,
+      "char_end": 9316,
+      "text": "This is fallback text for segment 77.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1078,
+      "char_start": 9317,
+      "char_end": 9437,
+      "text": "This is fallback text for segment 78.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1079,
+      "char_start": 9438,
+      "char_end": 9558,
+      "text": "This is fallback text for segment 79.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1080,
+      "char_start": 9559,
+      "char_end": 9679,
+      "text": "This is fallback text for segment 80.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9980",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1081,
+      "char_start": 9680,
+      "char_end": 9800,
+      "text": "This is fallback text for segment 81.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1082,
+      "char_start": 9801,
+      "char_end": 9921,
+      "text": "This is fallback text for segment 82.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1083,
+      "char_start": 9922,
+      "char_end": 10042,
+      "text": "This is fallback text for segment 83.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1084,
+      "char_start": 10043,
+      "char_end": 10163,
+      "text": "This is fallback text for segment 84.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1085,
+      "char_start": 10164,
+      "char_end": 10284,
+      "text": "This is fallback text for segment 85.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9985",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1086,
+      "char_start": 10285,
+      "char_end": 10405,
+      "text": "This is fallback text for segment 86.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1087,
+      "char_start": 10406,
+      "char_end": 10526,
+      "text": "This is fallback text for segment 87.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1088,
+      "char_start": 10527,
+      "char_end": 10647,
+      "text": "This is fallback text for segment 88.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1089,
+      "char_start": 10648,
+      "char_end": 10768,
+      "text": "This is fallback text for segment 89.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1090,
+      "char_start": 10769,
+      "char_end": 10889,
+      "text": "This is fallback text for segment 90.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9990",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1091,
+      "char_start": 10890,
+      "char_end": 11010,
+      "text": "This is fallback text for segment 91.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1092,
+      "char_start": 11011,
+      "char_end": 11131,
+      "text": "This is fallback text for segment 92.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1093,
+      "char_start": 11132,
+      "char_end": 11252,
+      "text": "This is fallback text for segment 93.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1094,
+      "char_start": 11253,
+      "char_end": 11373,
+      "text": "This is fallback text for segment 94.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1095,
+      "char_start": 11374,
+      "char_end": 11494,
+      "text": "This is fallback text for segment 95.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "9995",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1096,
+      "char_start": 11495,
+      "char_end": 11615,
+      "text": "This is fallback text for segment 96.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1097,
+      "char_start": 11616,
+      "char_end": 11736,
+      "text": "This is fallback text for segment 97.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1098,
+      "char_start": 11737,
+      "char_end": 11857,
+      "text": "This is fallback text for segment 98.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1099,
+      "char_start": 11858,
+      "char_end": 11978,
+      "text": "This is fallback text for segment 99.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1100,
+      "char_start": 11979,
+      "char_end": 12099,
+      "text": "This is fallback text for segment 100.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99100",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1101,
+      "char_start": 12100,
+      "char_end": 12220,
+      "text": "This is fallback text for segment 101.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1102,
+      "char_start": 12221,
+      "char_end": 12341,
+      "text": "This is fallback text for segment 102.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1103,
+      "char_start": 12342,
+      "char_end": 12462,
+      "text": "This is fallback text for segment 103.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1104,
+      "char_start": 12463,
+      "char_end": 12583,
+      "text": "This is fallback text for segment 104.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1105,
+      "char_start": 12584,
+      "char_end": 12704,
+      "text": "This is fallback text for segment 105.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99105",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1106,
+      "char_start": 12705,
+      "char_end": 12825,
+      "text": "This is fallback text for segment 106.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1107,
+      "char_start": 12826,
+      "char_end": 12946,
+      "text": "This is fallback text for segment 107.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1108,
+      "char_start": 12947,
+      "char_end": 13067,
+      "text": "This is fallback text for segment 108.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1109,
+      "char_start": 13068,
+      "char_end": 13188,
+      "text": "This is fallback text for segment 109.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1110,
+      "char_start": 13189,
+      "char_end": 13309,
+      "text": "This is fallback text for segment 110.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99110",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1111,
+      "char_start": 13310,
+      "char_end": 13430,
+      "text": "This is fallback text for segment 111.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1112,
+      "char_start": 13431,
+      "char_end": 13551,
+      "text": "This is fallback text for segment 112.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1113,
+      "char_start": 13552,
+      "char_end": 13672,
+      "text": "This is fallback text for segment 113.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1114,
+      "char_start": 13673,
+      "char_end": 13793,
+      "text": "This is fallback text for segment 114.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1115,
+      "char_start": 13794,
+      "char_end": 13914,
+      "text": "This is fallback text for segment 115.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99115",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1116,
+      "char_start": 13915,
+      "char_end": 14035,
+      "text": "This is fallback text for segment 116.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1117,
+      "char_start": 14036,
+      "char_end": 14156,
+      "text": "This is fallback text for segment 117.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1118,
+      "char_start": 14157,
+      "char_end": 14277,
+      "text": "This is fallback text for segment 118.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1119,
+      "char_start": 14278,
+      "char_end": 14398,
+      "text": "This is fallback text for segment 119.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1120,
+      "char_start": 14399,
+      "char_end": 14519,
+      "text": "This is fallback text for segment 120.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99120",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1121,
+      "char_start": 14520,
+      "char_end": 14640,
+      "text": "This is fallback text for segment 121.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1122,
+      "char_start": 14641,
+      "char_end": 14761,
+      "text": "This is fallback text for segment 122.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1123,
+      "char_start": 14762,
+      "char_end": 14882,
+      "text": "This is fallback text for segment 123.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1124,
+      "char_start": 14883,
+      "char_end": 15003,
+      "text": "This is fallback text for segment 124.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1125,
+      "char_start": 15004,
+      "char_end": 15124,
+      "text": "This is fallback text for segment 125.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99125",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1126,
+      "char_start": 15125,
+      "char_end": 15245,
+      "text": "This is fallback text for segment 126.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1127,
+      "char_start": 15246,
+      "char_end": 15366,
+      "text": "This is fallback text for segment 127.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1128,
+      "char_start": 15367,
+      "char_end": 15487,
+      "text": "This is fallback text for segment 128.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1129,
+      "char_start": 15488,
+      "char_end": 15608,
+      "text": "This is fallback text for segment 129.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1130,
+      "char_start": 15609,
+      "char_end": 15729,
+      "text": "This is fallback text for segment 130.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99130",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1131,
+      "char_start": 15730,
+      "char_end": 15850,
+      "text": "This is fallback text for segment 131.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1132,
+      "char_start": 15851,
+      "char_end": 15971,
+      "text": "This is fallback text for segment 132.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1133,
+      "char_start": 15972,
+      "char_end": 16092,
+      "text": "This is fallback text for segment 133.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1134,
+      "char_start": 16093,
+      "char_end": 16213,
+      "text": "This is fallback text for segment 134.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1135,
+      "char_start": 16214,
+      "char_end": 16334,
+      "text": "This is fallback text for segment 135.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99135",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1136,
+      "char_start": 16335,
+      "char_end": 16455,
+      "text": "This is fallback text for segment 136.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1137,
+      "char_start": 16456,
+      "char_end": 16576,
+      "text": "This is fallback text for segment 137.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1138,
+      "char_start": 16577,
+      "char_end": 16697,
+      "text": "This is fallback text for segment 138.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1139,
+      "char_start": 16698,
+      "char_end": 16818,
+      "text": "This is fallback text for segment 139.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1140,
+      "char_start": 16819,
+      "char_end": 16939,
+      "text": "This is fallback text for segment 140.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99140",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1141,
+      "char_start": 16940,
+      "char_end": 17060,
+      "text": "This is fallback text for segment 141.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1142,
+      "char_start": 17061,
+      "char_end": 17181,
+      "text": "This is fallback text for segment 142.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1143,
+      "char_start": 17182,
+      "char_end": 17302,
+      "text": "This is fallback text for segment 143.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1144,
+      "char_start": 17303,
+      "char_end": 17423,
+      "text": "This is fallback text for segment 144.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1145,
+      "char_start": 17424,
+      "char_end": 17544,
+      "text": "This is fallback text for segment 145.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99145",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1146,
+      "char_start": 17545,
+      "char_end": 17665,
+      "text": "This is fallback text for segment 146.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1147,
+      "char_start": 17666,
+      "char_end": 17786,
+      "text": "This is fallback text for segment 147.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1148,
+      "char_start": 17787,
+      "char_end": 17907,
+      "text": "This is fallback text for segment 148.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1149,
+      "char_start": 17908,
+      "char_end": 18028,
+      "text": "This is fallback text for segment 149.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1150,
+      "char_start": 18029,
+      "char_end": 18149,
+      "text": "This is fallback text for segment 150.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99150",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1151,
+      "char_start": 18150,
+      "char_end": 18270,
+      "text": "This is fallback text for segment 151.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1152,
+      "char_start": 18271,
+      "char_end": 18391,
+      "text": "This is fallback text for segment 152.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1153,
+      "char_start": 18392,
+      "char_end": 18512,
+      "text": "This is fallback text for segment 153.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1154,
+      "char_start": 18513,
+      "char_end": 18633,
+      "text": "This is fallback text for segment 154.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1155,
+      "char_start": 18634,
+      "char_end": 18754,
+      "text": "This is fallback text for segment 155.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99155",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1156,
+      "char_start": 18755,
+      "char_end": 18875,
+      "text": "This is fallback text for segment 156.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1157,
+      "char_start": 18876,
+      "char_end": 18996,
+      "text": "This is fallback text for segment 157.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1158,
+      "char_start": 18997,
+      "char_end": 19117,
+      "text": "This is fallback text for segment 158.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1159,
+      "char_start": 19118,
+      "char_end": 19238,
+      "text": "This is fallback text for segment 159.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1160,
+      "char_start": 19239,
+      "char_end": 19359,
+      "text": "This is fallback text for segment 160.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99160",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1161,
+      "char_start": 19360,
+      "char_end": 19480,
+      "text": "This is fallback text for segment 161.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1162,
+      "char_start": 19481,
+      "char_end": 19601,
+      "text": "This is fallback text for segment 162.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1163,
+      "char_start": 19602,
+      "char_end": 19722,
+      "text": "This is fallback text for segment 163.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1164,
+      "char_start": 19723,
+      "char_end": 19843,
+      "text": "This is fallback text for segment 164.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1165,
+      "char_start": 19844,
+      "char_end": 19964,
+      "text": "This is fallback text for segment 165.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99165",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1166,
+      "char_start": 19965,
+      "char_end": 20085,
+      "text": "This is fallback text for segment 166.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1167,
+      "char_start": 20086,
+      "char_end": 20206,
+      "text": "This is fallback text for segment 167.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1168,
+      "char_start": 20207,
+      "char_end": 20327,
+      "text": "This is fallback text for segment 168.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1169,
+      "char_start": 20328,
+      "char_end": 20448,
+      "text": "This is fallback text for segment 169.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1170,
+      "char_start": 20449,
+      "char_end": 20569,
+      "text": "This is fallback text for segment 170.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99170",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1171,
+      "char_start": 20570,
+      "char_end": 20690,
+      "text": "This is fallback text for segment 171.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1172,
+      "char_start": 20691,
+      "char_end": 20811,
+      "text": "This is fallback text for segment 172.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1173,
+      "char_start": 20812,
+      "char_end": 20932,
+      "text": "This is fallback text for segment 173.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1174,
+      "char_start": 20933,
+      "char_end": 21053,
+      "text": "This is fallback text for segment 174.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1175,
+      "char_start": 21054,
+      "char_end": 21174,
+      "text": "This is fallback text for segment 175.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99175",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1176,
+      "char_start": 21175,
+      "char_end": 21295,
+      "text": "This is fallback text for segment 176.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1177,
+      "char_start": 21296,
+      "char_end": 21416,
+      "text": "This is fallback text for segment 177.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1178,
+      "char_start": 21417,
+      "char_end": 21537,
+      "text": "This is fallback text for segment 178.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1179,
+      "char_start": 21538,
+      "char_end": 21658,
+      "text": "This is fallback text for segment 179.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1180,
+      "char_start": 21659,
+      "char_end": 21779,
+      "text": "This is fallback text for segment 180.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99180",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1181,
+      "char_start": 21780,
+      "char_end": 21900,
+      "text": "This is fallback text for segment 181.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1182,
+      "char_start": 21901,
+      "char_end": 22021,
+      "text": "This is fallback text for segment 182.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1183,
+      "char_start": 22022,
+      "char_end": 22142,
+      "text": "This is fallback text for segment 183.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1184,
+      "char_start": 22143,
+      "char_end": 22263,
+      "text": "This is fallback text for segment 184.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1185,
+      "char_start": 22264,
+      "char_end": 22384,
+      "text": "This is fallback text for segment 185.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99185",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1186,
+      "char_start": 22385,
+      "char_end": 22505,
+      "text": "This is fallback text for segment 186.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1187,
+      "char_start": 22506,
+      "char_end": 22626,
+      "text": "This is fallback text for segment 187.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1188,
+      "char_start": 22627,
+      "char_end": 22747,
+      "text": "This is fallback text for segment 188.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1189,
+      "char_start": 22748,
+      "char_end": 22868,
+      "text": "This is fallback text for segment 189.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1190,
+      "char_start": 22869,
+      "char_end": 22989,
+      "text": "This is fallback text for segment 190.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99190",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1191,
+      "char_start": 22990,
+      "char_end": 23110,
+      "text": "This is fallback text for segment 191.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1192,
+      "char_start": 23111,
+      "char_end": 23231,
+      "text": "This is fallback text for segment 192.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1193,
+      "char_start": 23232,
+      "char_end": 23352,
+      "text": "This is fallback text for segment 193.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1194,
+      "char_start": 23353,
+      "char_end": 23473,
+      "text": "This is fallback text for segment 194.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1195,
+      "char_start": 23474,
+      "char_end": 23594,
+      "text": "This is fallback text for segment 195.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99195",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1196,
+      "char_start": 23595,
+      "char_end": 23715,
+      "text": "This is fallback text for segment 196.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1197,
+      "char_start": 23716,
+      "char_end": 23836,
+      "text": "This is fallback text for segment 197.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1198,
+      "char_start": 23837,
+      "char_end": 23957,
+      "text": "This is fallback text for segment 198.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1199,
+      "char_start": 23958,
+      "char_end": 24078,
+      "text": "This is fallback text for segment 199.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1200,
+      "char_start": 24079,
+      "char_end": 24199,
+      "text": "This is fallback text for segment 200.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99200",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1201,
+      "char_start": 24200,
+      "char_end": 24320,
+      "text": "This is fallback text for segment 201.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1202,
+      "char_start": 24321,
+      "char_end": 24441,
+      "text": "This is fallback text for segment 202.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1203,
+      "char_start": 24442,
+      "char_end": 24562,
+      "text": "This is fallback text for segment 203.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1204,
+      "char_start": 24563,
+      "char_end": 24683,
+      "text": "This is fallback text for segment 204.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1205,
+      "char_start": 24684,
+      "char_end": 24804,
+      "text": "This is fallback text for segment 205.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99205",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1206,
+      "char_start": 24805,
+      "char_end": 24925,
+      "text": "This is fallback text for segment 206.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1207,
+      "char_start": 24926,
+      "char_end": 25046,
+      "text": "This is fallback text for segment 207.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1208,
+      "char_start": 25047,
+      "char_end": 25167,
+      "text": "This is fallback text for segment 208.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1209,
+      "char_start": 25168,
+      "char_end": 25288,
+      "text": "This is fallback text for segment 209.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1210,
+      "char_start": 25289,
+      "char_end": 25409,
+      "text": "This is fallback text for segment 210.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99210",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1211,
+      "char_start": 25410,
+      "char_end": 25530,
+      "text": "This is fallback text for segment 211.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1212,
+      "char_start": 25531,
+      "char_end": 25651,
+      "text": "This is fallback text for segment 212.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1213,
+      "char_start": 25652,
+      "char_end": 25772,
+      "text": "This is fallback text for segment 213.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1214,
+      "char_start": 25773,
+      "char_end": 25893,
+      "text": "This is fallback text for segment 214.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1215,
+      "char_start": 25894,
+      "char_end": 26014,
+      "text": "This is fallback text for segment 215.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99215",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1216,
+      "char_start": 26015,
+      "char_end": 26135,
+      "text": "This is fallback text for segment 216.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1217,
+      "char_start": 26136,
+      "char_end": 26256,
+      "text": "This is fallback text for segment 217.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1218,
+      "char_start": 26257,
+      "char_end": 26377,
+      "text": "This is fallback text for segment 218.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1219,
+      "char_start": 26378,
+      "char_end": 26498,
+      "text": "This is fallback text for segment 219.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1220,
+      "char_start": 26499,
+      "char_end": 26619,
+      "text": "This is fallback text for segment 220.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99220",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1221,
+      "char_start": 26620,
+      "char_end": 26740,
+      "text": "This is fallback text for segment 221.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1222,
+      "char_start": 26741,
+      "char_end": 26861,
+      "text": "This is fallback text for segment 222.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1223,
+      "char_start": 26862,
+      "char_end": 26982,
+      "text": "This is fallback text for segment 223.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1224,
+      "char_start": 26983,
+      "char_end": 27103,
+      "text": "This is fallback text for segment 224.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1225,
+      "char_start": 27104,
+      "char_end": 27224,
+      "text": "This is fallback text for segment 225.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99225",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1226,
+      "char_start": 27225,
+      "char_end": 27345,
+      "text": "This is fallback text for segment 226.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1227,
+      "char_start": 27346,
+      "char_end": 27466,
+      "text": "This is fallback text for segment 227.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1228,
+      "char_start": 27467,
+      "char_end": 27587,
+      "text": "This is fallback text for segment 228.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1229,
+      "char_start": 27588,
+      "char_end": 27708,
+      "text": "This is fallback text for segment 229.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1230,
+      "char_start": 27709,
+      "char_end": 27829,
+      "text": "This is fallback text for segment 230.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99230",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1231,
+      "char_start": 27830,
+      "char_end": 27950,
+      "text": "This is fallback text for segment 231.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1232,
+      "char_start": 27951,
+      "char_end": 28071,
+      "text": "This is fallback text for segment 232.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1233,
+      "char_start": 28072,
+      "char_end": 28192,
+      "text": "This is fallback text for segment 233.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1234,
+      "char_start": 28193,
+      "char_end": 28313,
+      "text": "This is fallback text for segment 234.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1235,
+      "char_start": 28314,
+      "char_end": 28434,
+      "text": "This is fallback text for segment 235.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99235",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1236,
+      "char_start": 28435,
+      "char_end": 28555,
+      "text": "This is fallback text for segment 236.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1237,
+      "char_start": 28556,
+      "char_end": 28676,
+      "text": "This is fallback text for segment 237.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1238,
+      "char_start": 28677,
+      "char_end": 28797,
+      "text": "This is fallback text for segment 238.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1239,
+      "char_start": 28798,
+      "char_end": 28918,
+      "text": "This is fallback text for segment 239.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1240,
+      "char_start": 28919,
+      "char_end": 29039,
+      "text": "This is fallback text for segment 240.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99240",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1241,
+      "char_start": 29040,
+      "char_end": 29160,
+      "text": "This is fallback text for segment 241.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1242,
+      "char_start": 29161,
+      "char_end": 29281,
+      "text": "This is fallback text for segment 242.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1243,
+      "char_start": 29282,
+      "char_end": 29402,
+      "text": "This is fallback text for segment 243.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1244,
+      "char_start": 29403,
+      "char_end": 29523,
+      "text": "This is fallback text for segment 244.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1245,
+      "char_start": 29524,
+      "char_end": 29644,
+      "text": "This is fallback text for segment 245.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99245",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1246,
+      "char_start": 29645,
+      "char_end": 29765,
+      "text": "This is fallback text for segment 246.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1247,
+      "char_start": 29766,
+      "char_end": 29886,
+      "text": "This is fallback text for segment 247.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1248,
+      "char_start": 29887,
+      "char_end": 30007,
+      "text": "This is fallback text for segment 248.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1249,
+      "char_start": 30008,
+      "char_end": 30128,
+      "text": "This is fallback text for segment 249.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1250,
+      "char_start": 30129,
+      "char_end": 30249,
+      "text": "This is fallback text for segment 250.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99250",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1251,
+      "char_start": 30250,
+      "char_end": 30370,
+      "text": "This is fallback text for segment 251.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1252,
+      "char_start": 30371,
+      "char_end": 30491,
+      "text": "This is fallback text for segment 252.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1253,
+      "char_start": 30492,
+      "char_end": 30612,
+      "text": "This is fallback text for segment 253.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1254,
+      "char_start": 30613,
+      "char_end": 30733,
+      "text": "This is fallback text for segment 254.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1255,
+      "char_start": 30734,
+      "char_end": 30854,
+      "text": "This is fallback text for segment 255.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99255",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    },
+    {
+      "id": 1256,
+      "char_start": 30855,
+      "char_end": 30975,
+      "text": "This is fallback text for segment 256.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1257,
+      "char_start": 30976,
+      "char_end": 31096,
+      "text": "This is fallback text for segment 257.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1258,
+      "char_start": 31097,
+      "char_end": 31217,
+      "text": "This is fallback text for segment 258.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1259,
+      "char_start": 31218,
+      "char_end": 31338,
+      "text": "This is fallback text for segment 259.",
+      "has_sound": false,
+      "clip": null
+    },
+    {
+      "id": 1260,
+      "char_start": 31339,
+      "char_end": 31459,
+      "text": "This is fallback text for segment 260.",
+      "has_sound": true,
+      "clip": {
+        "audiocaps_id": "99260",
+        "ytid": "sampleAudio",
+        "start_sec": 0.0,
+        "score": 0.88
+      }
+    }
+  ]
+}
