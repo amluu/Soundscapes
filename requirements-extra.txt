@@ -1,5 +1,4 @@
-# Only for the dense and LSA parts (soundscapes/dense.py, soundscapes/lsa.py and
-# their scripts). Everything else is standard library.
+# For lsa, minilm, tfidf_pos and the classifier scripts. Book processing and tfidf need only the standard library.
 numpy
 scipy
 scikit-learn

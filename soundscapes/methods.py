@@ -20,15 +20,19 @@ def tfidf_pos(segs, caps, **_):
     return tfidf(segs, caps, pos=True)
 
 
-def lsa(segs, caps, dims=300, **_):
+def to_csr(rows, n_cols):
+    """Sparse dict rows {column: weight} -> scipy CSR matrix"""
     from scipy.sparse import csr_matrix
+    return csr_matrix(([w for r in rows for w in r.values()], ([i for i, r in enumerate(rows) for _ in r],
+                                                               [j for r in rows for j in r])),
+                      shape=(len(rows), n_cols))
+
+
+def lsa(segs, caps, dims=300, **_):
     from sklearn.decomposition import TruncatedSVD
     from .minilm import normalize
     S, C, extra = tfidf(segs, caps)
-    rows = S + C
-    X = csr_matrix(([w for r in rows for w in r.values()], ([i for i, r in enumerate(rows) for _ in r],
-                                                            [j for r in rows for j in r])),
-                   shape=(len(rows), len(extra['vectorizer'].vocab)))
+    X = to_csr(S + C, len(extra['vectorizer'].vocab))
     Z = normalize(TruncatedSVD(dims, random_state=0).fit_transform(X).astype(np.float32))
     return Z[:len(S)], Z[len(S):], {}
 

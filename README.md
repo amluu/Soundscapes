@@ -17,6 +17,20 @@ python scripts/process_book.py data/raw/hobbit.epub --id hobbit --title "The Hob
 # 2. match segments to captions (needs data/raw/audiocaps_clean.csv and audiocaps_clips.csv)
 python scripts/match.py --method tfidf        # or tfidf_pos, lsa, minilm
 
+# 3. hand labels (Kindle notebook export) -> per-segment labels, then the sound/no-sound gate
+python scripts/align_notes.py data/raw/natalie_notes.html
+python scripts/train_classifier.py --features tfidf --train 1-4 --dev 5 --test 6   # or --features minilm
+python scripts/match.py --method minilm --gate data/processed/hobbit.minilm.gate.csv
+
+# 4. LLM gate, scored against the labels
+python scripts/llm_classify.py --mode zeroshot # needs SCI_LLM_API_KEY in .env; also --mode fewshot
+
+# 5. manual eval: every matcher behind the gate, then a blind sheet to grade
+python scripts/match.py --method tfidf --gate data/processed/hobbit.minilm.gate.csv   # and the other three
+python eval/export_eval.py --chapters 7-19 --kept 100 --rejected 50
+python eval/score_eval.py data/processed/hobbit.eval.graded.*.csv   # one sheet per grader
+python eval/score_gate_marks.py hobbit.gate_marks.*.csv   # group's real-sound marks on the two gates
+
 python -m unittest discover -s tests
 ```
 
@@ -35,7 +49,12 @@ python -m unittest discover -s tests
 | `soundscapes/postag.py` | part-of-speech-tagged words for `tfidf_pos` |
 | `soundscapes/minilm.py` | MiniLM sentence embeddings |
 | `soundscapes/methods.py` | the four methods behind one interface, top-k search, cutoff |
+| `soundscapes/notes.py` | reads a Kindle notebook export and aligns its highlights to segments |
 | `scripts/process_book.py`, `scripts/match.py` | command-line entry points |
+| `scripts/align_notes.py`, `scripts/train_classifier.py` | hand labels, and the logistic regression gate |
+| `scripts/llm_classify.py` | the LLM gate |
+| `eval/export_eval.py`, `eval/score_eval.py` | blind sheet for hand grading; its tally by method and grader kappa |
+| `eval/score_gate_marks.py` | tally of the group's marks on the TF-IDF and MiniLM gate picks, with kappa |
 
 ## Outputs (`data/processed/`)
 
@@ -46,15 +65,28 @@ python -m unittest discover -s tests
 | `<id>.chapters.csv` | chapter titles and offsets |
 | `<id>.annotation.csv` | segments with an empty `sound` column for hand labelling |
 | `<id>.<method>.top.csv` | each segment's top 3 captions and cosine scores |
-| `<id>.<method>.soundscape.json` | e-reader format with `has_sound` and `clip` filled in |
+| `<id>.labels.csv` / `<id>.alignment.csv` | sound labels and descriptions per segment; where each highlight landed |
+| `<id>.<features>.gate.csv` | the classifier's `p_sound` and `has_sound` for every segment |
+| `<id>.<features>.lr_eval.csv`, `<id>.tfidf.lr_terms.csv` | classifier predictions on labelled chapters; top terms |
+| `<id>.eval.csv` / `.json`, `<id>.eval_key.csv` | items to grade (methods hidden, shuffled); which methods made each item |
 
-E-reader format:
+## Soundscapes (`output/`)
+
+The e-reader JSONs, committed so the frontend can read them.
+
+| file | what |
+|---|---|
+| `<id>.<method>.soundscape.json` | `has_sound` and `clip` filled in by the score cutoff |
+| `<id>.<method>.gated.soundscape.json` | sounds only where the gate says so (`hobbit.minilm.gated` is the full-book demo) |
+
+Format:
 
 ```json
 {"book": "The Hobbit",
  "segments": [
    {"id": 412, "char_start": 51230, "char_end": 51311, "text": "The thunder crashed ...",
-    "has_sound": true, "clip": {"audiocaps_id": "91234", "start_sec": 30, "score": 0.61}},
+    "has_sound": true, "clip": {"audiocaps_id": "91234", "start_sec": 30, "score": 0.61,
+             "ytid": "IU9Z_7GsYNM", "caption": "Thunder roars"}},
    {"id": 413, "char_start": 51312, "char_end": 51360, "text": "Bilbo wished he were home.",
     "has_sound": false, "clip": null}]}
 ```
@@ -107,3 +139,17 @@ the same scale across methods (a TF-IDF 0.3 is roughly a MiniLM 0.47), so
 `--share 0.12` picks each method's cutoff so 12% of segments get a sound.
 That share is a placeholder. A sound/no-sound classifier trained on the
 hand-labelled segments should replace it.
+
+**Labels come from highlights.** The annotator highlighted sound lines in a
+Kindle and wrote what each sounds like. Every segment in chapters 1-6 that a
+highlight covers is a sound (with the note as its description); everything
+else is no sound. The Kindle edition's punctuation differs from ours, so both sides
+are reduced to bare letters before aligning. Only about 3% of segments are
+sounds, and lines the annotator skipped count as no sound even when they have one.
+
+**The gate is logistic regression, split by chapter.** Train on chapters 1-4,
+pick C on chapter 5, test on chapter 6, so no chapter is seen twice. Classes
+are weighted because sounds are rare. Dev and test hold only five or six sounds
+each, so leave-one-chapter-out scores and average precision are reported too.
+TF-IDF features are the planned baseline; MiniLM embeddings are an option
+because 53 training sounds are too few for word features to generalize.

@@ -1,6 +1,4 @@
-# Book texts and anything derived from them stay out of git (The Hobbit is under
-# copyright and is used only inside the group). EPUBs go in data/raw/, outputs
-# in data/processed/.
+# EPUBs go in data/raw/, outputs in data/processed/.
 data/
 *.epub
 *.mobi
@@ -12,6 +10,7 @@ data/
 __pycache__/
 *.pyc
 .venv/
+.env
 .ipynb_checkpoints/
 .DS_Store
 
