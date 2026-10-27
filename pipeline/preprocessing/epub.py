@@ -1,4 +1,4 @@
-"""Read paragraphs out of an EPUB, in reading (spine) order, with the stdlib only."""
+"""Read paragraphs from an EPUB in reading order."""
 import posixpath
 import re
 import zipfile

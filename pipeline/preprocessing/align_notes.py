@@ -1,18 +1,14 @@
-"""Turn a Kindle notebook export of sound annotations into per-segment labels.
+# Kindle notebook export -> per-segment sound labels.
+# run: python pipeline/preprocessing/align_notes.py data/raw/natalie_notes.html
 
-    python scripts/align_notes.py data/raw/natalie_notes.html
-
-Writes <id>.labels.csv (sound = 1 where a highlight covers the segment) and
-<id>.alignment.csv (where each highlight landed).
-"""
 import argparse
 import csv
 import os
 import sys
 from collections import defaultdict
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-from soundscapes.notes import MIN_SCORE, align, read_notebook  # noqa: E402
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
+from pipeline.preprocessing.notes import MIN_SCORE, align, read_notebook  # noqa: E402
 
 
 def main():

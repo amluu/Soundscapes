@@ -1,11 +1,6 @@
-"""Tally everyone's "real sound?" marks from gate_review.html.
+"""Tally the group's real-sound marks on the gate picks, with Cohen's kappa.
 
-    python eval/score_gate_marks.py hobbit.gate_marks.*.csv
-
-For each classifier, prints how many of its marked picks were real sounds,
-pooling everyone's marks (ch 1-6 extra picks and ch 7-19 separately). Then
-prints agreement and Cohen's kappa for each pair of people on the rows both
-marked (the TF-IDF picks, which everyone marks).
+    python pipeline/manual-eval/score_gate_marks.py hobbit.gate_marks.*.csv
 """
 import csv
 import sys

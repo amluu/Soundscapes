@@ -1,17 +1,6 @@
-"""Match book segments to AudioCaps captions with one method, then apply a score cutoff.
+"""Match segments to AudioCaps captions and write the soundscape JSON.
 
-    python scripts/match.py --method minilm --share 0.12
-
-Steps: embed segments and captions -> top-3 captions per segment by cosine
-similarity -> segments whose best score clears the cutoff get that clip.
---share picks the cutoff that gives that share of segments a sound; --cutoff sets it.
---gate uses the classifier from scripts/train_classifier.py instead of a cutoff.
-
-Writes to --out (default data/processed):
-  <id>.<method>.top.csv          each segment's top 3 captions and scores
-  <method>.vectorizer.json       fitted vocabulary and idf (TF-IDF methods only)
-and to --json-out (default output), for the e-reader:
-  <id>.<method>.soundscape.json  has_sound and clip filled in (<id>.<method>.gated.soundscape.json with --gate)
+    python pipeline/matching/match.py --method minilm --gate data/processed/hobbit.minilm.gate.csv
 """
 import argparse
 import csv
@@ -19,8 +8,8 @@ import json
 import os
 import sys
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-from soundscapes.methods import METHODS, cutoff_for_share, top_k  # noqa: E402
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
+from pipeline.matching.methods import METHODS, cutoff_for_share, top_k  # noqa: E402
 
 
 def read_csv(path):

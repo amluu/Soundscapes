@@ -1,14 +1,6 @@
-"""Sound / no-sound gate with an instruct LLM, scored like the logistic regression.
+"""Sound/no-sound gate with an LLM (zero-shot or few-shot), scored against the labels.
 
-    python scripts/llm_classify.py --mode zeroshot --chapters 6
-    python scripts/llm_classify.py --mode fewshot --chapters 6 --model qwen3.8
-
-Uses the Pitt SCI LLM proxy by default. The key comes from SCI_LLM_API_KEY,
-in the shell or in .env. Temperature 0.
-  zeroshot  one call per segment (with the sentence before it): SOUND or NO_SOUND
-  fewshot   --window numbered segments plus 8 labelled examples; the model lists the sound ids
-
-Writes <id>.llm_<mode>.<model>.csv and prints P/R/F1 against the labels.
+    python pipeline/classifier/llm_classify.py --mode zeroshot --chapters 6
 """
 import argparse
 import csv

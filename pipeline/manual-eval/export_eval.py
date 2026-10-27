@@ -1,12 +1,6 @@
-"""Export a blind sheet for grading gated soundscapes by hand.
+"""Export a blind, shuffled sheet for grading the gated soundscapes by hand.
 
-    python eval/export_eval.py --chapters 7-19 --kept 100 --rejected 50
-
-Samples segments the gate kept and rejected from chapters it wasn't trained on.
-One item per distinct clip per kept segment, shuffled, with no method names.
-Grades: 1 wrong sound/no-sound decision, 2 wrong clip, 3 right.
-
-Writes <id>.eval.csv / .json (items to grade) and <id>.eval_key.csv (item -> methods).
+    python pipeline/manual-eval/export_eval.py --chapters 7-19 --kept 100 --rejected 50
 """
 import argparse
 import csv
@@ -16,7 +10,7 @@ import random
 import sys
 from collections import defaultdict
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'classifier'))
 from train_classifier import chapters  # noqa: E402
 
 COLS = ['item', 'segment_id', 'chapter', 'previous', 'text', 'has_sound', 'audiocaps_id', 'youtube_id',

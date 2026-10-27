@@ -8,8 +8,8 @@ STOP_RE = re.compile(r'^(table of contents|contents|appendix|about the author)\s
 QUOTES = {'\u201c': '"', '\u201d': '"', '\u2018': "'", '\u2019': "'", '\xab': '"', '\xbb': '"'}
 DASHES = {'\u2013': '-', '\u2014': ' - ', '\u2015': ' - '}
 
-VERSE_MAX_CHARS = 70  # verse lines are short
-VERSE_MIN_LINES = 3   # a run this long of short, non-dialogue lines is a song or poem
+VERSE_MAX_CHARS = 70
+VERSE_MIN_LINES = 3  # this many short lines in a row is a song or poem
 
 
 @dataclass
@@ -28,7 +28,7 @@ class Chapter:
 
 
 def normalize(text):
-    """Straighten quotes, plain dashes, collapse whitespace. Keeps hyphenation as is."""
+    """Straighten quotes and dashes, collapse whitespace."""
     for a, b in {**QUOTES, **DASHES}.items():
         text = text.replace(a, b)
     text = text.replace('\xa0', ' ').replace('\xad', '')
@@ -36,17 +36,16 @@ def normalize(text):
 
 
 def _is_verse_line(p):
-    # Short, not a line of dialogue (which opens and closes a quote), not a lead-in ("he sang:").
     return len(p) <= VERSE_MAX_CHARS and p.count('"') <= 1 and not p.endswith(':')
 
 
 def _ends_open(p):
-    """Paragraph stops mid-sentence (e-book conversions often break a sentence across <p>)."""
+    """True if the paragraph stops mid-sentence."""
     return bool(re.search(r'[A-Za-z,]$', p))
 
 
 def to_blocks(paras):
-    """Group paragraphs into prose and verse blocks, re-joining sentences broken across <p>."""
+    """Group paragraphs into prose and verse blocks, rejoining split sentences."""
     paras = [normalize(p) for p in paras]
     paras = [p for p in paras if p]
     verse = [False] * len(paras)
@@ -81,12 +80,7 @@ def _roman(s):
 
 
 def chapters_from_paragraphs(paras):
-    """Split a flat paragraph list into chapters.
-
-    Everything before the first "Chapter N" heading is front matter and is dropped,
-    as is everything from a "Table of Contents" heading on. The paragraph right
-    after each heading is taken as the chapter title.
-    """
+    """Split paragraphs into chapters, dropping front matter and anything from the table of contents on."""
     chapters, expect_title = [], False
     for raw in paras:
         p = normalize(raw)

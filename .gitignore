@@ -4,8 +4,7 @@ data/
 *.mobi
 *.azw3
 *.txt
-!requirements*.txt
-!tests/fixtures/*.txt
+!requirements.txt
 
 __pycache__/
 *.pyc

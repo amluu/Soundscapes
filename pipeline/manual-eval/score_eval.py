@@ -1,9 +1,6 @@
-"""Tally graded eval sheets by method, and grader agreement.
+"""eval graded eval sheets by method, with Cohen's kappa between graders.
 
-    python eval/score_eval.py data/processed/hobbit.eval.graded.*.csv
-
-Joins grades to <id>.eval_key.csv and prints each method's share of 1s, 2s and 3s.
-With several sheets, also prints Cohen's kappa for each pair of graders on shared items.
+    python pipeline/manual-eval/score_eval.py data/processed/hobbit.eval.graded.*.csv
 """
 import argparse
 import csv

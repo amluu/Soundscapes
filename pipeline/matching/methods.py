@@ -1,11 +1,4 @@
-"""The four matchers. Each embeds segments and captions into one shared space
-and returns (segment_vectors, caption_vectors, extra_files_to_save).
-
-    tfidf      words + word pairs, fitted on segments and captions together
-    tfidf_pos  the same, with part-of-speech-tagged words
-    lsa        TF-IDF reduced to 300 dimensions with truncated SVD
-    minilm     all-MiniLM-L6-v2 sentence embeddings
-"""
+"""The four matchers; each returns (segment vectors, caption vectors, extra files to save)."""
 import numpy as np
 
 from .tfidf import TfidfVectorizer, sparse_top_k
@@ -47,7 +40,7 @@ METHODS = {'tfidf': tfidf, 'tfidf_pos': tfidf_pos, 'lsa': lsa, 'minilm': minilm}
 
 
 def top_k(S, C, k=3):
-    """For each segment, its k best captions as [(caption_index, cosine), ...], best first."""
+    """Each segment's k best captions as [(caption_index, cosine), ...]."""
     if isinstance(S, list):
         return sparse_top_k(S, C, k)
     out = []

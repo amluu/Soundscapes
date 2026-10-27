@@ -1,15 +1,6 @@
-"""Train the sound / no-sound gate: logistic regression on segment features.
+"""Train the logistic regression sound/no-sound classifier, split by chapter.
 
-    python scripts/train_classifier.py --features tfidf --train 1-4 --dev 5 --test 6
-
---features tfidf uses the vectorizer scripts/match.py saves; minilm uses sentence embeddings.
-Splits are by chapter. C is picked by dev F1. Also reports leave-one-chapter-out
-(loco) scores and average precision (AP), since dev and test have few sounds.
-
-Writes to --out (default data/processed):
-  <id>.<features>.gate.csv     every segment's p_sound and has_sound, from a model refit on all labelled chapters
-  <id>.<features>.lr_eval.csv  labelled segments with gold label, dev/test and loco p_sound
-  <id>.tfidf.lr_terms.csv      the most sound-like and least sound-like terms (tfidf only)
+    python pipeline/classifier/train_classifier.py --features minilm --train 1-4 --dev 5 --test 6
 """
 import argparse
 import csv
@@ -20,9 +11,9 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import average_precision_score, precision_recall_fscore_support
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-from soundscapes.methods import to_csr  # noqa: E402
-from soundscapes.tfidf import TfidfVectorizer  # noqa: E402
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
+from pipeline.matching.methods import to_csr  # noqa: E402
+from pipeline.matching.tfidf import TfidfVectorizer  # noqa: E402
 
 
 def chapters(spec):
@@ -66,7 +57,7 @@ def main():
         vec = TfidfVectorizer.load(a.vectorizer)
         X = to_csr(vec.transform(texts), len(vec.vocab))
     else:
-        from soundscapes.minilm import MiniLM
+        from pipeline.matching.minilm import MiniLM
         X = MiniLM(a.model).encode(texts)
     chap = np.array([int(s['chapter']) for s in segs])
     y = np.array([gold.get(i, -1) for i in range(len(segs))])
@@ -80,7 +71,7 @@ def main():
     C = max([0.1, 0.3, 1, 3, 10, 30], key=lambda c: scores(y[dev], fit(X[tr], y[tr], c).predict_proba(X[dev])[:, 1])[2])
     model = fit(X[tr], y[tr], C)
     p = model.predict_proba(X)[:, 1]
-    loco = np.zeros(len(y))  # each labelled chapter scored by a model trained on the others
+    loco = np.zeros(len(y))  # leave-one-chapter-out
     for c in np.unique(chap[labelled]):
         held = labelled & (chap == c)
         loco[held] = fit(X[labelled & ~held], y[labelled & ~held], C).predict_proba(X[held])[:, 1]

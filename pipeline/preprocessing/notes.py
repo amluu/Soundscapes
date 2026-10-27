@@ -1,22 +1,14 @@
-"""Read a Kindle notebook export and line its highlights up with our segments.
-
-Each highlight is a line from the book; the note(s) after it describe its sound.
-The Kindle edition differs from our text in punctuation and the odd typo,
-so both sides are reduced to bare letters and aligned with difflib.
-"""
+"""Read a Kindle notebook export and align its highlights to segments."""
 import difflib
 import html
 import re
 
 MIN_SCORE = 0.8    # share of the highlight's letters that must be found in our text
-MIN_OVERLAP = 15   # letters a segment must share with a highlight to count (or half the segment)
+MIN_OVERLAP = 15   # letters a segment must share with a highlight (or half the segment)
 
 
 def read_notebook(path):
-    """[{'chapter', 'highlight', 'notes': [str, ...]}] in reading order.
-
-    A note belongs to the highlight before it. A note can hold two sounds, one per line.
-    """
+    """[{'chapter', 'highlight', 'notes'}] in reading order; a note belongs to the highlight before it."""
     with open(path, encoding='utf-8') as f:
         doc = f.read()
     items, chapter = [], 0
@@ -45,7 +37,7 @@ def align(highlight, segments):
         chap += t
         owner += [s['id']] * len(t)
     h = letters(highlight)
-    # Anchor on the longest exact run, then align the highlight against a window around it.
+    # anchor on the longest exact run, then align within a window around it
     m = difflib.SequenceMatcher(None, chap, h, autojunk=False).find_longest_match(0, len(chap), 0, len(h))
     lo = max(0, m.a - m.b - 20)
     window = chap[lo:m.a - m.b + len(h) + 20]
