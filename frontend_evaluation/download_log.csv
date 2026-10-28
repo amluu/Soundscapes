@@ -1,4 +1,5 @@
 youtube_id,start_time,status,note
+<<<<<<< HEAD
 bKbsPXcVBAI,10,failed,ERROR: [youtube] bKbsPXcVBAI: This video is unavailable
 6oS4OX8Jvco,30,ok,
 Ds-gI7WhvDI,30,ok,
@@ -360,12 +361,92 @@ Q2oZc5Ct0YU,30,ok,
 5m_Wp6x15vU,1,ok,short clip (9.1s): video ends before start+10s
 Ukj8p9em2HI,30,ok,
 ze1LAKSIQ7Y,90,ok,
+=======
+TsC76kty3tM,17,ok,short clip (9.5s): video ends before start+10s
+0TzyMHA3mrM,30,ok,
+6p5umLTemOM,30,ok,
+-43v51oAu6I,1,ok,short clip (9.0s): video ends before start+10s
+-2kJxd9ZW9g,12,ok,
+W17a0IZlXkM,0,ok,short clip (5.5s): video ends before start+10s
+IU9Z_7GsYNM,30,ok,
+3OVvstfC2xc,70,ok,
+2SJJAX13cN8,30,failed,ERROR: [youtube] 2SJJAX13cN8: This video is unavailable
+H3eDXCB738A,20,ok,
+80RFPTmKalA,13,ok,short clip (9.3s): video ends before start+10s
+yZZFDWkYJYs,16,ok,
+mFp8Ffffya0,30,ok,
+52iDn7g8jtc,26,ok,
+u-6osTkkOfY,80,ok,
+9ZwVkfH2zQA,20,ok,
+mCnMHgAi1zI,60,ok,
+oVSM65HBWTs,30,ok,
+adv-dsoRFBc,30,ok,
+tTKJR_oYdhw,11,ok,short clip (9.4s): video ends before start+10s
+FoXVHFqAO9U,30,ok,
+R1hPAC4ESbY,150,ok,
+5iiK7y4tWfU,80,ok,
+0w-Q_FXugTQ,110,ok,
+ywsenyar9yM,0,failed,ERROR: [youtube] ywsenyar9yM: This video is unavailable
+3poE9zc2bUs,30,ok,
+Pb6MqpdX5Jw,40,failed,Error opening input files: Server returned 403 Forbidden (access denied)
+5OfL3tqVXME,30,ok,
+1E7oO1PwoDI,0,ok,
+8ENPBWcJTX8,20,ok,
+YBrwkCJkX50,50,ok,
+4N5JdNePMc4,18,ok,short clip (9.2s): video ends before start+10s
+I--BwP_ClCs,40,failed,ERROR: [youtube] I--BwP_ClCs: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
+1vnl-z7SQFg,90,ok,
+4KiL_9c14TM,50,failed,ERROR: [youtube] 4KiL_9c14TM: This video is unavailable
+118fKSs0Qi0,60,ok,
+-8LCIu-mUjw,0,failed,"ERROR: [youtube] -8LCIu-mUjw: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+1UpPtvmB9Aw,180,ok,
+ndCCcNVcYa4,70,ok,
+5vYKwUn9JMY,90,ok,
+zc4xSrpXEJg,30,ok,
+2FCyZ0OyWVM,50,ok,
+1ZCS_VtfYN4,6,ok,short clip (9.3s): video ends before start+10s
+0qjRRgkvibM,30,ok,
+mxv8nky5la0,0,failed,"ERROR: [youtube] mxv8nky5la0: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+BGrD4zkWx9o,550,ok,
+JZloTOdIY_c,30,ok,
+6YWK8S1thvk,30,ok,
+-RaCH2huqdc,9,ok,
+ROootH-mtEI,130,ok,
+pTm7dpVEpWQ,30,ok,
+5kVJDa4is7M,30,ok,
+Lf0uRoEQPHo,430,failed,ERROR: [youtube] Lf0uRoEQPHo: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
+FhimNYClv40,40,ok,
+20RwAJ4dtSU,80,ok,
+4v9O60HOe50,30,ok,
+opZQTkyEUJI,30,ok,
+VBWRXqFTbr8,30,failed,"ERROR: [youtube] VBWRXqFTbr8: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+0FjbEj6rmNg,0,ok,
+M6c-R4Wlz4Y,0,ok,short clip (5.4s): video ends before start+10s
+kU43JPApzZw,40,ok,
+6Z_0llYQzEA,30,ok,
+rINmxSXMR-s,30,ok,
+L2dyilgQ8iM,20,ok,
+AvGyw4Sc_yo,30,ok,
+-7dcq0-6-dc,90,ok,
+4wiEjkwpSKI,50,ok,
+TVdAI0xaU8s,0,ok,short clip (3.3s): video ends before start+10s
+-1TcdZyNUEE,10,ok,
+z5mMLppe0Og,30,ok,
+83NCnfJuj-g,30,ok,
+9AZZncb_yek,0,ok,short clip (6.2s): video ends before start+10s
+5m_Wp6x15vU,1,ok,short clip (9.1s): video ends before start+10s
+Q2oZc5Ct0YU,30,ok,
+1akGF9SqyCg,3,ok,
+ze1LAKSIQ7Y,90,ok,
+Ukj8p9em2HI,30,ok,
+>>>>>>> 992850d96151a1ac24edc080f76352e7a5eb6154
 4zIKUX3AzqE,28,ok,short clip (9.3s): video ends before start+10s
 OwZDN1PUu8I,30,failed,"ERROR: [youtube] OwZDN1PUu8I: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
 aWnLbeStEDg,0,ok,
 -4EgiS-jnnw,30,ok,
 a1cWI4bogUU,30,ok,
 wW7Ubml_vOQ,16,failed,ERROR: [youtube] wW7Ubml_vOQ: This video is unavailable
+<<<<<<< HEAD
 86f8-XlBi_w,14,ok,
 kVLUeNfAyHs,20,ok,
 o3_TeVdHaaM,590,ok,
@@ -405,18 +486,67 @@ mThKUHxtcuA,20,ok,
 -5HoQzaVHZY,590,ok,
 Wq67MpjPSTs,90,ok,
 ojgPUVaRnJg,10,failed,"ERROR: [youtube] ojgPUVaRnJg: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+=======
+o3_TeVdHaaM,590,ok,
+86f8-XlBi_w,14,ok,
+aExX-TIotbE,0,ok,short clip (4.3s): video ends before start+10s
+kVLUeNfAyHs,20,ok,
+55ESAiUYgIo,30,ok,
+LNNcTAxQkns,13,ok,
+7vwgAm0I4gs,30,failed,ERROR: [youtube] 7vwgAm0I4gs: This video is unavailable
+sTMKled6Q1M,30,ok,
+-10fWp7Pqs4,30,ok,
+Qv1HXaT-28U,4,ok,
+xtGX3nfkF0M,30,failed,ERROR: [youtube] xtGX3nfkF0M: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
+9fL3bNArxmc,0,ok,
+1WbmiK6XCyA,30,ok,
+3FmxwhMpvbA,30,ok,
+79gJuv7NWbk,16,ok,short clip (9.4s): video ends before start+10s
+-NW2pPAToFM,0,ok,
+8J5910EVe34,30,failed,ERROR: [youtube] 8J5910EVe34: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
+998RhGRlp1c,30,ok,
+DQJwCqR08Tg,170,ok,
+YOTZEV34zhY,30,ok,
+GE1aZSnPr2Q,0,ok,
+D4xn56kvySQ,300,ok,
+1ni2n7qcjDI,30,ok,
+d4skl55FP7Q,40,ok,
+La_A7ebiPKA,6,ok,short clip (9.2s): video ends before start+10s
+IBz1kBHrRsc,30,ok,
+55L1wH5Q1qo,80,ok,
+lKhe8BxkRnU,25,ok,
+gSCxF_JTNYM,0,ok,
+yXavVcAPMIA,30,ok,
+B2_Nvi8H5aU,10,ok,
+DrCm-HpX67k,180,ok,
+JWFYayo-EnU,30,ok,
+ETN-tTDtvVE,30,ok,
+ojgPUVaRnJg,10,failed,"ERROR: [youtube] ojgPUVaRnJg: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+-zxy2tntyF0,0,ok,
+mThKUHxtcuA,20,ok,
+Wq67MpjPSTs,90,ok,
+-5HoQzaVHZY,590,ok,
+0Hxth3DK480,140,failed,ERROR: [youtube] 0Hxth3DK480: This video is not available
+>>>>>>> 992850d96151a1ac24edc080f76352e7a5eb6154
 0ajEZTMYsWs,30,failed,"ERROR: [youtube] 0ajEZTMYsWs: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
 65xggirg8oc,190,ok,
 tMJne1a4AFI,0,ok,
 1zDNdkNEMcA,70,ok,
 xERFUeZONz8,0,ok,
 ZqoSoW7e1JM,0,ok,
+<<<<<<< HEAD
 HrrsDIdllA0,0,ok,short clip (8.7s): video ends before start+10s
 kKZbeKIHySs,100,failed,ERROR: [youtube] kKZbeKIHySs: Sign in to confirm your age. This video may be inappropriate for some users. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+=======
+kKZbeKIHySs,100,failed,ERROR: [youtube] kKZbeKIHySs: Sign in to confirm your age. This video may be inappropriate for some users. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+HrrsDIdllA0,0,ok,short clip (8.7s): video ends before start+10s
+Nw03Pxb-7i8,0,ok,short clip (6.8s): video ends before start+10s
+>>>>>>> 992850d96151a1ac24edc080f76352e7a5eb6154
 TT6g8hipvMs,11,ok,short clip (9.3s): video ends before start+10s
 BCFPHsgCQ2c,330,ok,
 lFfV7I5COzk,10,ok,
 6VEpJ0BohIs,140,ok,
+<<<<<<< HEAD
 Nw03Pxb-7i8,0,ok,short clip (6.8s): video ends before start+10s
 uE5FJVfDmFo,190,ok,
 45-S9dHZlTI,430,failed,"ERROR: [youtube] 45-S9dHZlTI: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
@@ -486,11 +616,87 @@ KJKHDKKW3XU,5,ok,
 23wtCcm4iWQ,30,ok,
 ZXI582qgcnA,30,ok,
 yXrw3GRMZag,40,ok,
+=======
+uE5FJVfDmFo,190,ok,
+7vCbOhsIizU,8,ok,
+45-S9dHZlTI,430,failed,"ERROR: [youtube] 45-S9dHZlTI: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+lEHJVvqWb-Q,500,ok,
+-kbKtRtFlHo,40,failed,ERROR: [youtube] -kbKtRtFlHo: This video is unavailable
+-oIl-vDYoCo,30,ok,
+8k1aAw6hEOQ,450,ok,
+jB-BqeXji9s,30,ok,
+xuap_s8frrA,30,failed,"ERROR: [youtube] xuap_s8frrA: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+-MiUIhsDfkk,30,ok,
+DkkWHlu4Yyk,0,ok,short clip (6.2s): video ends before start+10s
+3xyT6DVReN8,0,ok,
+X8eXLuLGhrc,130,ok,
+ji4dn19TSDg,6,ok,
+3FsITWhbDQc,30,failed,Error opening input files: Server returned 403 Forbidden (access denied)
+5J8otjp6KLQ,30,ok,
+434PeTJp_-U,320,failed,"ERROR: [youtube] 434PeTJp_-U: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+BprUWaxRMpw,40,ok,
+-grB4LdQS0k,9,ok,
+2eMxfXNdlZI,30,ok,
+3jzMzHwLLYg,110,ok,
+8Y1OJ1qLbZA,40,ok,
+npbwcincPa4,0,ok,
+RwG3wDo_41o,70,ok,
+2DwotmImTsI,30,ok,
+0AnxOy9y0cU,30,ok,
+OmgC_AYLtsk,320,ok,
+DLuOQlaCO3w,30,ok,
+4kRDE90UGRg,50,ok,
+1BGQamdgxXA,300,ok,
+u4555yb2bIs,70,ok,
+2kx9Qx-W_Zs,30,ok,
+u6BnG6YZqJ4,0,ok,
+6bJf7i8IEB4,390,ok,
+vVNMuFixN_A,90,ok,
+zYdrkpVat3Y,30,ok,
+OyIrvT3f0wU,4,ok,
+0czPO9uRe3A,20,ok,short clip (9.0s): video ends before start+10s
+6qbBhxIav_c,0,ok,short clip (7.1s): video ends before start+10s
+HoTd9nQeRrw,0,ok,short clip (8.0s): video ends before start+10s
+LEo28uAsUQM,20,ok,
+1VSLSGXlG1s,440,ok,
+0fbPre0YtT8,0,ok,
+qsRS6WZwDHc,20,ok,
+8uDXjGqs7ro,50,ok,
+-46mOzNQICY,21,ok,
+YodB1Rq8qlI,80,ok,
+JsuJfnmqssM,470,ok,
+4Iu-Em87lmA,6,ok,short clip (9.5s): video ends before start+10s
+xgGG_EOdkuk,30,ok,
+4F4sQwcSqDQ,26,ok,short clip (9.1s): video ends before start+10s
+37GApMXDF-0,30,ok,
+yniJbMHv52Y,30,ok,
+A7Ni0ZDgJHM,80,ok,
+wkc6KNXko3k,12,ok,short clip (9.3s): video ends before start+10s
+5nZfPQhqsaw,30,ok,
+sSfLZG9Szh0,0,ok,short clip (5.1s): video ends before start+10s
+bKbsPXcVBAI,10,failed,ERROR: [youtube] bKbsPXcVBAI: This video is unavailable
+e2rScj9UyMs,30,ok,
+1HzYVgDlZ6U,30,ok,
+2alIHkdqBro,30,ok,
+AgaiowyYt88,30,ok,
+yC_OJHksCDc,30,ok,
+9X89A9fxDuc,12,ok,
+23wtCcm4iWQ,30,ok,
+zPTzROMJ-ZA,20,ok,
+Q3o6-Q2igq0,18,ok,short clip (9.1s): video ends before start+10s
+KJKHDKKW3XU,5,ok,
+07baX78gkB0,30,ok,
+5nSlro1t588,30,failed,ERROR: [youtube] 5nSlro1t588: This video is unavailable
+5xA51w7HDag,10,ok,
+yXrw3GRMZag,40,ok,
+ZXI582qgcnA,30,ok,
+>>>>>>> 992850d96151a1ac24edc080f76352e7a5eb6154
 1GBCAen4xYA,0,ok,short clip (6.4s): video ends before start+10s
 vcTWN0HCyoY,210,ok,
 86XtLYXaAEQ,10,ok,
 3b23umXzPVA,30,ok,
 ZHWU0GPuwo0,0,ok,short clip (4.2s): video ends before start+10s
+<<<<<<< HEAD
 MVDZbYCQNEI,2,ok,short clip (9.2s): video ends before start+10s
 3jmOv2yFt-w,6,ok,short clip (9.2s): video ends before start+10s
 or6OwYyqrwk,120,failed,ERROR: [youtube] or6OwYyqrwk: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
@@ -1076,3 +1282,38 @@ le6lUw3CZ78,30,ok,
 0rhwwKxUvm4,25,ok,short clip (9.1s): video ends before start+10s
 Ie0fXj670E4,40,ok,
 5knsN74nemg,20,ok,
+=======
+or6OwYyqrwk,120,failed,ERROR: [youtube] or6OwYyqrwk: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
+MVDZbYCQNEI,2,ok,short clip (9.2s): video ends before start+10s
+3jmOv2yFt-w,6,ok,short clip (9.2s): video ends before start+10s
+4OdW6snh4zA,40,ok,
+TopKvI4E06E,90,ok,
+AiIVmOXDg7k,0,ok,
+xowxSLxNkSg,30,ok,
+6IQ4aVdj99c,4,ok,short clip (9.5s): video ends before start+10s
+t-ApAh9rgeY,100,ok,
+7oHiglshBko,50,ok,
+MxcQARYSiKg,50,ok,
+_7oyStIfozA,30,failed,"ERROR: [youtube] _7oyStIfozA: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+xnVzaYbBspo,50,failed,ERROR: [youtube] xnVzaYbBspo: This video has been removed for violating YouTube's Terms of Service
+5vUtusnPXXs,120,ok,
+7SWVaDxkhZg,300,failed,Error opening input files: Server returned 403 Forbidden (access denied)
+bSe9PVBg4X0,360,ok,
+YQFpiWXRLYg,0,ok,
+WDHMmJHz2rg,10,ok,
+7QUIkKO8Mac,30,ok,
+1nK9NDd0Nho,330,ok,
+3acUK1hqWl4,370,ok,
+Ep72tyiL3as,1,failed,ERROR: [youtube] Ep72tyiL3as: This video is unavailable
+4j_J1qmYzlY,30,ok,
+rIA9_lC32Y0,0,failed,"ERROR: [youtube] rIA9_lC32Y0: Private video. If the owner of this video has granted you access, please sign in. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+lcHPWtp4Nxk,10,ok,
+0DjCF-MgraE,30,ok,
+9kFvLkMlQNo,30,ok,
+2sh7ZkazyO8,510,ok,
+509nBIRhfzU,30,ok,
+qDjs668c0PM,24,ok,short clip (9.5s): video ends before start+10s
+9GptFm2hTvI,2,ok,short clip (9.2s): video ends before start+10s
+IlzSBZtOnp4,10,ok,
+BDAM1O5WBUc,3,ok,
+>>>>>>> 992850d96151a1ac24edc080f76352e7a5eb6154
