@@ -12,6 +12,15 @@ from gtts import gTTS
 # Initialize Pygame Mixer
 pygame.mixer.init()
 
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Default to the output folder file
+primary_json = os.path.join(BASE_DIR, "..", "output", "hobbit.minilm.gated.soundscape.json")
+fallback_json = os.path.join(BASE_DIR, "demo_nlp.json")
+
+JSON_PATH = primary_json if os.path.exists(primary_json) else fallback_json
+
 # ---------------------------------------------------------------------------
 # 1. DATA PREPARATION (REAL NLP JSON + EPUB SLICING)
 # ---------------------------------------------------------------------------
@@ -323,7 +332,7 @@ if __name__ == "__main__":
     root = tk.Tk()
     
     #Load real data using the EPUB and the JSON output from the NLP pipeline
-    nlp_segments = load_data("TheHobbit.epub", "demo_nlp.json")
+    nlp_segments = load_data("TheHobbit.epub", JSON_PATH)
     
     app = AudioReaderEvaluator(root, segments=nlp_segments)
     root.mainloop()
