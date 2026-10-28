@@ -57,6 +57,7 @@ def load_data(epub_path, json_path):
         if seg.get("has_sound"):
             # Default directly to the text extracted by the NLP JSON pipeline
             segment_text = seg.get("text", "").strip()
+            clip_data = seg.get("clip") or {}
 
             processed_segments.append({
                 "id": seg.get("id"),
@@ -64,7 +65,8 @@ def load_data(epub_path, json_path):
                 "char_end": seg.get("char_end", 0),
                 "text": segment_text,
                 "has_sound": True,
-                "clip": seg.get("clip")
+                "clip": seg.get("clip"),
+                "caption": clip_data.get("caption")
             })
 
     return processed_segments
@@ -208,9 +210,14 @@ class AudioReaderEvaluator:
             row = tk.Frame(self.scores_container, bd=1, relief="groove")
             row.pack(fill="x", pady=6, padx=2)
 
-            label_txt = f"ID #{seg_id} - {'Sound' if seg['has_sound'] else 'No Sound'}"
-            tk.Label(row, text=label_txt, font=("Helvetica", 9, "bold")).pack(side="top", anchor="w", padx=2)
+            # 1. Segment ID Label (Simplified since we only load segments with sound now)
+            tk.Label(row, text=f"ID #{seg_id}", font=("Helvetica", 9, "bold")).pack(side="top", anchor="w", padx=2)
 
+            # 2. The New Caption Label
+            caption_text = f"Caption: {seg.get('caption', 'None')}"
+            tk.Label(row, text=caption_text, font=("Helvetica", 8, "italic"), fg="#555555", wraplength=300, justify="left").pack(side="top", anchor="w", padx=2, pady=(0, 4))
+
+            # 3. Radio Buttons
             var = tk.StringVar(value=self.scores.get(str(seg_id), ""))
             
             tk.Radiobutton(row, text="1) No sound needed", variable=var, value="no_sound_needed", font=("Helvetica", 9)).pack(anchor="w")
