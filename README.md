@@ -1,6 +1,7 @@
 # book-soundscapes
 
 CS 1671 group project: Book Soundscapes 
+
 Ava Luu, Aidan Robin, Nitin Chandran, Natalie Goldsworthy
 
 ## Run
