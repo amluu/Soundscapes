@@ -1,31 +1,16 @@
-"""Build the cleaned book text and split it into ID'd segments with character offsets.
-
-Rule agreed by the group: split on sentence ends; a segment shorter than
-MIN_CHARS is merged with the segment after it (or, at the end of a chapter,
-with the one before it).
-
-Layout of the cleaned text that the offsets point into:
-  sentences in a paragraph  joined by a space
-  paragraphs                separated by a blank line ("\\n\\n")
-  verse lines               separated by "\\n"
-  chapters                  separated by two blank lines ("\\n\\n\\n")
-Chapter headings are not in the text; they are listed in the chapters table.
-Segment ids are integers counting from 0 in reading order.
-"""
+"""Join the cleaned chapters into one text and split it into segments with character offsets."""
 import re
 
 MIN_CHARS = 20
 VERSE_LINES_PER_SEGMENT = 4
 ABBREVIATIONS = {'mr', 'mrs', 'ms', 'dr', 'st', 'mt', 'co', 'vs', 'etc', 'ft', 'no'}
 
-# End of a sentence: . ! or ? (plus closing quotes/brackets), then space, then
-# something that can start a sentence.
 _BOUNDARY = re.compile(r'[.!?]+["\')\]]*(?=\s+["\'(]?[A-Z0-9])')
 _SENT_END = re.compile(r'[.!?]["\')\]]*$')
 
 
 def sentence_spans(text):
-    """Return [start, end) spans of the sentences in a prose paragraph."""
+    """[start, end) spans of the sentences in a prose paragraph."""
     spans, start = [], 0
     for m in _BOUNDARY.finditer(text):
         word = re.search(r'(\w+)\W*$', text[start:m.start() + 1])
@@ -41,7 +26,7 @@ def sentence_spans(text):
 
 
 def verse_spans(text):
-    """Split a verse block into chunks that end at a sentence end or after a few lines."""
+    """Split a verse block at sentence ends or every few lines."""
     spans, start, n, pos = [], 0, 0, 0
     for line in text.split('\n'):
         end = pos + len(line)
@@ -56,7 +41,7 @@ def verse_spans(text):
 
 
 def build(chapters):
-    """Return (text, segments, chapter_rows) for a list of clean.Chapter."""
+    """(text, segments, chapter_rows) for a list of clean.Chapter."""
     text, segments, chapter_rows = '', [], []
     for ci, ch in enumerate(chapters):
         if ci:

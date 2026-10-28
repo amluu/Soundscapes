@@ -1,9 +1,4 @@
-"""all-MiniLM-L6-v2 sentence embeddings via ONNX Runtime.
-
-Same recipe as sentence-transformers: WordPiece tokens (max 256), mean pooling
-over real tokens, L2 normalization. Model files: model.onnx + tokenizer.json from
-https://chroma-onnx-models.s3.amazonaws.com/all-MiniLM-L6-v2/onnx.tar.gz
-"""
+"""all-MiniLM-L6-v2 sentence embeddings with ONNX Runtime."""
 import os
 
 import numpy as np

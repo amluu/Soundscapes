@@ -1,0 +1,6 @@
+numpy
+scipy
+scikit-learn
+onnxruntime
+tokenizers
+nltk

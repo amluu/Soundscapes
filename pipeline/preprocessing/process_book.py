@@ -1,14 +1,14 @@
-"""Clean and segment an EPUB into the files listed in the README.
+"""Clean and segment an EPUB into text, segment and chapter files.
 
-    python scripts/process_book.py BOOK.epub --id hobbit --title "The Hobbit" [--annotation-sheet]
+    python pipeline/preprocessing/process_book.py data/raw/hobbit.epub --id hobbit --title "The Hobbit" --annotation-sheet
 """
 import argparse
 import collections
 import os
 import sys
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-from soundscapes.book import odd_characters, process_epub, write_annotation_sheet, write_outputs  # noqa: E402
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
+from pipeline.preprocessing.book import odd_characters, process_epub, write_annotation_sheet, write_outputs  # noqa: E402
 
 
 def main():

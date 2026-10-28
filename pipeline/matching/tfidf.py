@@ -1,9 +1,4 @@
-"""TF-IDF over words and word pairs, in plain Python.
-
-Weights match scikit-learn's TfidfVectorizer: idf = ln((1 + n) / (1 + df)) + 1,
-raw counts, L2-normalized rows. Rows are sparse dicts {column: weight}, so the
-dot product of two rows is their cosine similarity.
-"""
+"""TF-IDF over words and word pairs, weighted like scikit-learn."""
 import json
 import math
 import re
@@ -30,7 +25,7 @@ def tokenize(text):
 
 
 def with_pairs(words):
-    """Words plus adjacent word pairs. Stop words are already gone, so "crack of thunder" -> "crack thunder"."""
+    """Words plus adjacent word pairs."""
     return words + [f'{a} {b}' for a, b in zip(words, words[1:])]
 
 
@@ -77,7 +72,7 @@ class TfidfVectorizer:
 
 
 def sparse_top_k(queries, corpus, k):
-    """Top-k cosine matches per query row, using an inverted index over the corpus."""
+    """Top-k cosine matches per query, using an inverted index."""
     index = defaultdict(list)
     for i, row in enumerate(corpus):
         for j, w in row.items():
