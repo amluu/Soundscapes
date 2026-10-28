@@ -11,13 +11,19 @@ Run:
 `pip install -r requirements.txt` 
 `python -m nltk.downloader averaged_perceptron_tagger_eng`.
 
+Downloading clip audio (step 6) also needs `ffmpeg` on PATH (Windows: `winget install ffmpeg`). If YouTube downloads start failing, run `pip install -U yt-dlp`.
+
 ### 1. EPUB -> cleaned text, segments, e-reader JSON, annotation sheet
 ```
 python pipeline/preprocessing/process_book.py data/raw/hobbit.epub --id hobbit --title "The Hobbit" --annotation-sheet
 ```
 
-### 2. match segments to captions (needs data/raw/audiocaps_clean.csv and audiocaps_clips.csv)
+### 2. AudioCaps captions and speech/music flags, then match segments to captions
 ```
+python pipeline/preprocessing/build_audiocaps_csvs.py
+# writes data/raw/audiocaps_clean.csv and data/raw/audiocaps_clips.csv
+# fetches the AudioCaps CSVs (--audiocaps-version 1 or 2) and AudioSet labels (~100 MB)
+
 python pipeline/matching/match.py --method tfidf        
 # or tfidf_pos, lsa, minilm
 ```
@@ -50,6 +56,14 @@ python pipeline/manual-eval/score_eval.py data/processed/hobbit.eval.graded.*.cs
 python pipeline/manual-eval/score_gate_marks.py hobbit.gate_marks.*.csv   # group's real-sound marks on the two gates
 ```
 
+### 6. clip audio for the frontend
+```
+python pipeline/preprocessing/download_audiocaps.py --out frontend_evaluation/ytid --soundscapes output/*.soundscape.json
+# 10-second mp3s from start_time, saved as frontend_evaluation/ytid/<ytid>.mp3
+# leave out --soundscapes to download every AudioCaps clip (~51k, ~12 GB)
+```
+Rerunning skips clips already downloaded and retries failures. Failures (mostly removed or private videos) are listed in `frontend_evaluation/download_log.csv`. To stop the matcher picking clips with no audio, rebuild with `build_audiocaps_csvs.py --audio-dir frontend_evaluation/ytid` and rerun step 2.
+
 `minilm` also needs the model in `models/all-MiniLM-L6-v2/`
 (https://chroma-onnx-models.s3.amazonaws.com/all-MiniLM-L6-v2/onnx.tar.gz).
 
@@ -57,11 +71,12 @@ python pipeline/manual-eval/score_gate_marks.py hobbit.gate_marks.*.csv   # grou
 
 | path | what |
 |---|---|
-| `pipeline/preprocessing/` | `epub.py` reads the EPUB, `clean.py` drops front matter, finds chapters and spots verse, `segment.py` splits sentences and assigns ids and offsets, `book.py` runs them and writes the files; `notes.py` aligns Kindle highlights to segments. Scripts: `process_book.py`, `align_notes.py` |
+| `pipeline/preprocessing/` | `epub.py` reads the EPUB, `clean.py` drops front matter, finds chapters and spots verse, `segment.py` splits sentences and assigns ids and offsets, `book.py` runs them and writes the files; `notes.py` aligns Kindle highlights to segments. Scripts: `process_book.py`, `align_notes.py`, `build_audiocaps_csvs.py` (AudioCaps captions and speech/music flags), `download_audiocaps.py` (clip audio) |
 | `pipeline/matching/` | `tfidf.py` and `postag.py` (TF-IDF, plain and POS-tagged), `minilm.py` (MiniLM embeddings), `methods.py` (the four methods, top-k search, cutoff). Script: `match.py` |
 | `pipeline/classifier/` | `train_classifier.py` (logistic regression gate), `llm_classify.py` (LLM gate) |
 | `pipeline/manual-eval/` | `export_eval.py` (blind grading sheet), `score_eval.py` (tally by method, grader kappa), `score_gate_marks.py` (group's marks on the two gates) |
 | `output/` | soundscape JSONs for the frontend |
+| `frontend_evaluation/ytid/` | clip audio for the frontend, `<ytid>.mp3` |
 
 ## Outputs (`data/processed/`)
 
@@ -106,6 +121,8 @@ Format:
 lines are marked as `is_verse`, so they can be labelled or skipped.
 
 * We match against the human-written description in AudioCaps, not the actual audio (text to text)
+
+* All three AudioCaps splits are pooled into one caption set. Clips whose AudioSet labels include Speech or Music (or anything under them) are flagged `speech_or_music` and dropped before matching; clips missing from AudioSet fall back to caption keywords.
 
 * TF-IDF is fitted on segments and captions together.
 
