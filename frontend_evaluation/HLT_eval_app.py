@@ -8,17 +8,25 @@ from ebooklib import epub
 from bs4 import BeautifulSoup
 import pygame
 from gtts import gTTS
-
+from dotenv import load_dotenv
 # Initialize Pygame Mixer
 pygame.mixer.init()
 
 # Absolute reference to the directory containing this script
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Data paths
-primary_json = os.path.join(BASE_DIR, "..", "output", "hobbit.minilm.gated.soundscape.json")
-fallback_json = os.path.join(BASE_DIR, "demo_nlp.json")
+# Load variables from the local .env file
+env_path = os.path.join(BASE_DIR, ".env")
+if os.path.exists(env_path):
+    load_dotenv(env_path)
 
+# Read file names dynamically from environment variables with safe fallbacks
+OUTPUT_JSON_NAME = os.getenv("OUTPUT_JSON_NAME")
+FALLBACK_JSON_NAME = os.getenv("FALLBACK_JSON_NAME")
+
+# Data paths
+primary_json = os.path.join(BASE_DIR, "..", "output", OUTPUT_JSON_NAME)
+fallback_json = os.path.join(BASE_DIR, FALLBACK_JSON_NAME)
 JSON_PATH = primary_json if os.path.exists(primary_json) else fallback_json
 EPUB_PATH = os.path.join(BASE_DIR, "TheHobbit.epub")
 AUDIO_DIR = os.path.join(BASE_DIR, "ytid")
